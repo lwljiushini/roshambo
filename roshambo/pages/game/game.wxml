@@ -1,0 +1,30 @@
+<!--pages/test/test.wxml-->
+
+<!--<audio  src="{{src}}" id="myAudio" ></audio>-->
+<view class = "page" style = "background:{{bgColor}}">
+    <!--玩家输入-->
+    <view class = "player">
+        <view class = "select">Your Select：</view>
+
+        <view id = "player" class = "iconfont icon-{{player_result}}" style = "transform:{{myRotate}}">{{p_result}}</view>
+        
+        <view class = "player_select">
+            <button id = "stone"    style = "animation:{{btAnimate}}" class="iconfont icon-shitou"  bindtap = "stone_Btn"    disabled = "{{disabled}}"></button>
+            <button id = "rag"      style = "animation:{{btAnimate}}" class="iconfont icon-bu"      bindtap = "rag_Btn"      disabled = "{{disabled}}"></button>
+            <button id = "scissors" style = "animation:{{btAnimate}}" class="iconfont icon-jiandao" bindtap = "scissors_Btn" disabled = "{{disabled}}"></button>
+        </view>
+    </view>
+        
+    <!--胜负判断-->
+    <view class = "judge" style = "animation:{{myAnimate}};background:{{judgeBg}};">
+        <!--评判结果-->
+        <text id = "judge_font" style = "color:{{judgeColor}};">{{judge}}</text>
+        <!--重新开始-->
+        <button id = "again" class = "iconfont icon-refresh" bindtap = "again_Btn" style = "color:{{againColor}};background:{{againBg}};animation:{{againAnimate}};" ></button>
+    </view>
+     <!--电脑输入-->
+    <view class = "computer">
+        <text id = "computer">Computer Select：</text>
+        <text id = "result" style  = "transform:{{myRotate}}" class="iconfont icon-{{roshambo_result}}" >{{c_result}}</text>
+    </view>
+</view>

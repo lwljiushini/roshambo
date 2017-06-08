@@ -1,0 +1,8 @@
+<picker mode = "date" value = "{{date}}" start = "2014-01-01" end = "2020-12-31" bindchange = "getDateTime">
+    <view class = "picker">
+        当前选择：{{date}}
+    </view>
+</picker>
+<view>您选择的年份：{{years}}</view>
+<view>您选择的月份：{{month}}</view>
+<view>您选择的日期：{{day}}</view>

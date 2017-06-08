@@ -1,0 +1,33 @@
+/* pages/home/home.wxss */
+.flex-wrp{
+    height: 100px;
+    display: flex;
+    background-color: wheat;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+}
+.myScrollView{
+    border: 1px crimson solid;
+}
+.myLine{
+    height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+page{
+    background-color: antiquewhite;
+}
+.page{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section{
+    width: 220px;
+    height: 20px;
+    border: 1px solid gray;
+}

@@ -1,0 +1,40 @@
+{
+    "pages":[
+        "pages/game/game",
+        "pages/home/home",
+        "pages/about/about",
+        "pages/logs/logs"
+    ],    
+    "window":{
+        "navigationBarBackgroundColor": "black",
+        "navigationBarTitleText": "weChat",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "backgroundColor":"#f0f0f0",
+        "color": "gray",
+        "selectedColor": "green",
+        "borderStyle": "black",
+        "list": [{
+            "iconPath": "image/game.png",
+            "selectedIconPath": "image/select2.png",
+            "pagePath": "pages/game/game",
+            "text": "游戏"
+        },{
+            "iconPath": "image/home.png",
+            "selectedIconPath": "image/select2.png",
+            "pagePath": "pages/home/home",
+            "text": "首页"
+        },{
+            "iconPath": "image/log.png",
+            "selectedIconPath": "image/select2.png",
+            "pagePath": "pages/logs/logs",
+            "text": "日志"
+        },{
+            "iconPath": "image/me.png",
+            "selectedIconPath": "image/select2.png",
+            "pagePath": "pages/about/about",
+            "text": "我的"
+        }]
+    }
+}

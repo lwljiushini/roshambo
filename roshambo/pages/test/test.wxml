@@ -1,0 +1,181 @@
+<!--pages/home/home.wxml
+<!--数据绑定使用对象---内容-->
+<!--<view class="classname">{{message}}</view>-->
+
+<!--数据绑定使用对象---组件属性---需要爱双引号之内-->
+<!--<view class="classname" id="item-{{id}}">组件属性</view>-->
+
+<!--数据绑定使用对象---控制属性---需要爱双引号之内-->
+<!--<view class="classname" wx:if="condition">控制属性</view>-->
+
+<!--数据绑定使用对象---三元运算-->
+<!--<view class="classname" hidden="{{flag?true:false}}">三元运算</view>-->
+
+<!--数据绑定使用对象---算数运算-->
+<!--<view class="classname">我是运算结果:{{a+b}} + {{c}} + d</view>-->
+
+<!--数据绑定使用对象---逻辑判断-->
+<!--<view class="classname" wx:if="{{length < 5}}">asdf</view>-->
+
+<!--数据绑定使用对象---字符串运算-->
+<!--<view class="classname">{{"Hello" + name}}</view>-->
+
+<!--数据绑定使用对象---数组组合-->
+<!--<view wx:for="{{[zero, 1, 2, 3]}}">{{item}}</view>-->
+
+
+<!--pages/test/test.wxml-->
+<!--<view class="page">-->
+  <!--view组件-->
+  <!--<view class="page__hd">
+        <text class="page__title">view</text>
+        <text class="page__desc">弹性框模型分为弹性容器以及弹性项目。当组件的display为flex或inline-flex时，该组件则为弹性容器，弹性容器的子组件为弹性项目。</text>
+    </view>
+    <view class="page__bd">
+        <view class="section">
+            <view class="section__title">1:flex-direction: row</view>
+            <view class="flex-wrp" style="flex-direction:row;">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">2:flex-direction: column</view>
+            <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">3:justify-content: flex-start</view>
+            <view class="flex-wrp" style="flex-direction:row;justify-content: flex-start;">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">4:justify-content: flex-end</view>
+            <view class="flex-wrp" style="flex-direction:row;justify-content: flex-end;">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">5:justify-content: center</view>
+            <view class="flex-wrp" style="flex-direction:row;justify-content: center;">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">6:justify-content: space-between</view>
+            <view class="flex-wrp" style="flex-direction:row;justify-content: space-between;">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">7:justify-content: space-around</view>
+            <view class="flex-wrp" style="flex-direction:row;justify-content: space-around;">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">8:align-items: flex-end</view>
+            <view class="flex-wrp" style="height: 200px;flex-direction:row;justify-content: center;align-items: flex-end">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">9:align-items: center</view>
+            <view class="flex-wrp" style="height: 200px;flex-direction:row;justify-content: center;align-items: center">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+        <view class="section">
+            <view class="section__title">10:align-items: center</view>
+            <view class="flex-wrp" style="height: 200px;flex-direction:row;justify-content: center;align-items: flex-start">
+                <view class="flex-item" style="background: red"></view>
+                <view class="flex-item" style="background: green"></view>
+                <view class="flex-item" style="background: blue"></view>
+            </view>
+        </view>
+    </view>-->
+
+  <!--scroll-view组件-->
+  <!--<scroll-view scroll-y = "true" style = "height: 200px" class = "myScrollView">
+        <view style="background: red;   width: 100px; height: 100px"></view>
+        <view style="background: green; width: 100px; height: 100px"></view>
+        <view style="background: blue;  width: 100px; height: 100px"></view>
+        <view style="background: yellow;width: 100px; height: 100px"></view>
+    </scroll-view>
+    <scroll-view scroll-x = "true" style=" white-space: nowrap; display: flex"  class = "myScrollView">
+        <view style="background: red;   width: 200px; height: 100px; display: inline-block"></view>
+        <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
+        <view style="background: blue;  width: 200px; height: 100px; display: inline-block"></view>
+        <view style="background: yellow;width: 200px; height: 100px; display: inline-block"></view>
+    </scroll-view>-->
+
+  <!--swiper组件-->
+  <!--是否显示圆点，自动播放， 间隔时间， 监听滚动和点击事件-->
+  <!--<swiper indicator-dots="true" autoplay="true" duration="500" bindchange="listenSwiper" >
+        <swiper-item>
+            <view style="background: red;   height: 150px"></view>
+        </swiper-item>
+        <swiper-item>
+            <view style="background: green; height: 150px"></view>
+        </swiper-item>
+            <swiper-item>
+            <view style="background: blue;  height: 150px"></view>
+        </swiper-item>    
+    </swiper>
+    <view class = "myLine">
+        <icon type = "success" size = "25" />
+        <text style=" word-break: break-all">我是在wxml中设置的文本</text>
+    </view>
+    <view class = "myLine">
+        <icon type = "safe_success" size = "25" color = "red"/>
+        <text style=" word-break: break-all;color: red">{{myText}}</text>
+    </view>-->
+  
+  <!--progress组件-->
+  <!--<progress percent="100" show-info="true" stroke-width="6" color="#09BB07" active="true"/>-->
+
+  <!--button，checkbox-group，checkbox组件-->
+  <!--<wx-button type="default" bindtap="default_Btn">{{default}}</wx-button>
+  <wx-button type="primary" bindtap="primary_Btn">{{primary}}</wx-button>
+  <wx-button type="warn" bindtap="warn_Btn">{{warn}}</wx-button>
+  <wx-checkbox-group bindchange="listenCheckboxChange">
+    <wx-label style="display: flex;" wx:for-items="{{items}}">
+      <wx-checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+    </wx-label>
+  </wx-checkbox-group>-->
+
+  <!--form组件-->
+  <!--<form bindsubmit="listenFormSubmit" bindreset="listenFormReset">
+    <checkbox-group name="checkbox" bindchange="listenCheckboxChange">
+      <label style="display: flex" wx:for-items="{{items}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" id="{{item.id}}"/>{{item.name}}
+      </label>
+    </checkbox-group>
+    <button form-type="submit" type="primary">提交</button>
+    <button form-type="reset"  type="warn"   >重置</button>
+  </form>-->
+
+  <!--input组件-->
+  <!--<view class="section">
+    <input placeholder="这是一个可以自动聚焦的input" auto-focus />
+  </view>-->
+<!--</view>-->
